@@ -14,4 +14,9 @@ Design Sketch added
 **Version 0.2**
 Added Folders for HTML, CSS, and IMG Source used
 Added Drafts for Landing/Home Page
+29/9/2022
+
+**Version 0.3**
+Added Drafts for Page 1 (Get Started Page)
+1/10/2022
 ```
