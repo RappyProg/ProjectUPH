@@ -19,4 +19,8 @@ Added Drafts for Landing/Home Page
 **Version 0.3**
 Added Drafts for Page 1 (Get Started Page)
 1/10/2022
+
+**Version 0.4**
+Landing Page, Responsiveness Added
+21/10/2022
 ```
