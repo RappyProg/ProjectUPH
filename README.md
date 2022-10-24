@@ -23,4 +23,8 @@ Added Drafts for Page 1 (Get Started Page)
 **Version 0.4**
 Landing Page, Responsiveness Added
 21/10/2022
+
+**Version 0.5**
+Figma Landing Page Added
+24/10/2022
 ```
