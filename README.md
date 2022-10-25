@@ -27,4 +27,9 @@ Landing Page, Responsiveness Added
 **Version 0.5**
 Figma Landing Page Added
 24/10/2022
+
+**Version 0.5.1**
+Figma Wireframe uploaded
+Included --> Landing Page, Product Desc. page
+25/10/2022
 ```
