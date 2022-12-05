@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Schedule</title>
+    <link rel="stylesheet" href="yourschedule.css" class="css" />
+
+    <!--jQuery References-->
+    <script
+      src="http://code.jquery.com/jquery-1.9.1.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"
+      type="text/javascript"
+    ></script>
+
+    <!--Theme-->
+    <link
+      href="http://cdn.wijmo.com/themes/aristo/jquery-wijmo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!--Wijmo Widgets CSS-->
+    <link
+      href="http://cdn.wijmo.com/jquery.wijmo-pro.all.3.20132.15.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!--Wijmo Widgets JavaScript-->
+    <script
+      src="http://cdn.wijmo.com/jquery.wijmo-open.all.3.20132.15.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="http://cdn.wijmo.com/jquery.wijmo-pro.all.3.20132.15.min.js"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#calendar1").wijcalendar({
+          monthCols: 2,
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <header>
+          <div class="containing">
+            <div class="empty"></div>
+            <div class="logo">
+              <img src="/gambar/SVG/logo.svg" alt="" />
+            </div>
+
+            <div class="nav-icons">
+              <a href="#">
+                <i class="fa-solid fa-user"></i>
+              </a>
+              <a href="#">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </a>
+            </div>
+          </div>
+        </header>
+        <div class="bonding-reminder">
+          <h3>BONDING REMINDER</h3>
+        </div>
+        <div class="your-schedule">
+          <div class="calendar">
+            <h3>YOUR SCHEDULE</h3>
+            <div class="kalender">
+              <div id="calendar1"></div>
+            </div>
+          </div>
+          <div class="checklist-after-play">
+            <h3>5 Desember 2021</h3>
+            <div class="checklist">
+              <div class="checkbox">
+                <label for="checkbox">template</label>
+              </div>
+              <div class="centang">
+                <input type="checkbox" id="checkbox" />
+              </div>
+            </div>
+
+            <div class="checklist">
+              <div class="checkbox">
+                <label for="checkbox">template</label>
+              </div>
+              <div class="centang">
+                <input type="checkbox" id="checkbox" />
+              </div>
+            </div>
+
+            <div class="checklist">
+              <div class="checkbox">
+                <label for="checkbox3">template</label>
+              </div>
+              <div class="centang">
+                <input type="checkbox" id="checkbox" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <div class="container">
+            <div class="foot-links">
+              <table class="foot-table">
+                <tr>
+                  <td><a href="#">Shop</a></td>
+                  <td><a href="#">About Us</a></td>
+                  <td><a href="#">Help</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">By Age</a></td>
+                  <td><a href="#">Policies</a></td>
+                  <td><a href="#">Get Started</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">By Difficulty</a></td>
+                  <td>
+                    <a href="#"></a>
+                  </td>
+                  <td><a href="#">Privacy Settings</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">By Price</a></td>
+                  <td>
+                    <a href="#"></a>
+                  </td>
+                  <td><a href="#">Help Centre</a></td>
+                </tr>
+              </table>
+            </div>
+            <div class="social-media">
+              <div class="logo">
+                <img src="/gambar/SVG/logo.svg" alt="logo.sv" />
+              </div>
+              <div class="social">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <!-- footnote -->
+        <div class="footnote">
+          <div class="container">
+            <div class="that">
+              <a href="#"><i class="fa-solid fa-globe"></i></a>
+              <p>Indonesia</p>
+              <p>English (US)</p>
+              <p>Rp (IDR)</p>
+            </div>
+            <div class="empty"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

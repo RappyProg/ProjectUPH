@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="feature.css" class="css" />
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <header>
+          <div class="containing">
+            <div class="empty"></div>
+            <div class="logo">
+              <img src="/gambar/SVG/logo.svg" alt="" />
+            </div>
+
+            <div class="nav-icons">
+              <a href="#">
+                <i class="fa-solid fa-user"></i>
+              </a>
+              <a href="#">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </a>
+            </div>
+          </div>
+        </header>
+        <div class="bonding-reminder">
+          <h3>BONDING REMINDER</h3>
+        </div>
+        <div class="pick-date-bonding-time">
+          <div class="pick-a-date">
+            <h3>PICK A DATE</h3>
+            <div class="playing-date">
+              <input type="date" name="playing-date" id="playing-date" />
+            </div>
+          </div>
+          <div class="your-bonding-time">
+            <div class="title-bonding-time">
+              <h3>YOUR BONDING TIME</h3>
+            </div>
+            <div class="button-time-hour">
+              <span class="num">0</span>
+              <div class="buttonplusminus">
+                <span class="plus"><i class="fa-solid fa-caret-up"></i></span>
+                <span class="minus"
+                  ><i class="fa-solid fa-caret-down"></i
+                ></span>
+              </div>
+              <div class="titik-dua">
+                <h3>:</h3>
+              </div>
+              <div class="button-time-minute">
+                <span class="num">0</span>
+                <div class="buttonplusminuss">
+                  <span class="plus"><i class="fa-solid fa-caret-up"></i></span>
+                  <span class="minus"
+                    ><i class="fa-solid fa-caret-down"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="activity">
+                <input
+                  type="text"
+                  name="Activity"
+                  id="Activity"
+                  placeholder="Activity"
+                />
+              </div>
+              <div class="button-plus">
+                <h3>+</h3>
+              </div>
+            </div>
+            <div class="activity-tambahan">
+              <div class="pagi-play">
+                <input type="text" name="" id="" />
+              </div>
+              <div class="siang-play">
+                <input type="text" name="" id="" />
+              </div>
+              <div class="sore-play">
+                <input type="text" name="" id="" />
+              </div>
+            </div>
+            <div class="add-reminder">
+              <p><a href="#" class="tbl-hijau">A d d Reminder</a></p>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <div class="container">
+            <div class="foot-links">
+              <table class="foot-table">
+                <tr>
+                  <td><a href="#">Shop</a></td>
+                  <td><a href="#">About Us</a></td>
+                  <td><a href="#">Help</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">By Age</a></td>
+                  <td><a href="#">Policies</a></td>
+                  <td><a href="#">Get Started</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">By Difficulty</a></td>
+                  <td>
+                    <a href="#"></a>
+                  </td>
+                  <td><a href="#">Privacy Settings</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">By Price</a></td>
+                  <td>
+                    <a href="#"></a>
+                  </td>
+                  <td><a href="#">Help Centre</a></td>
+                </tr>
+              </table>
+            </div>
+            <div class="social-media">
+              <div class="logo">
+                <img src="/gambar/SVG/logo.svg" alt="logo.sv" />
+              </div>
+              <div class="social">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <!-- footnote -->
+        <div class="footnote">
+          <div class="container">
+            <div class="that">
+              <a href="#"><i class="fa-solid fa-globe"></i></a>
+              <p>Indonesia</p>
+              <p>English (US)</p>
+              <p>Rp (IDR)</p>
+            </div>
+            <div class="empty"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/2bb3d33425.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const tambah = document.querySelector(".plus"),
+        kurang = document.querySelector(".minus"),
+        angka = document.querySelector(".num");
+
+      let a = 0;
+
+      tambah.addEventListener("click", () => {
+        a++;
+        a = a < 23 ? "0" + a : a;
+        angka.innerText = a;
+        console.log(a);
+      });
+      kurang.addEventListener("click", () => {
+        if (a > 0) {
+          a--;
+          a = a < 23 ? "0" + a : a;
+          angka.innerText = a;
+        }
+      });
+    </script>
+  </body>
+</html>
