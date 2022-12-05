@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='ProductPageFigma.css')}}" class="css">
+</head>
+
+<body>
+    <main>
+        <!--big wrapper for the whole thing-->
+        <div class="big-wrapper">
+
+            <!--header section-->
+            <header>
+                <div class="container">
+                    <div class="empty">
+                        <!--to make the logo centered-->
+
+                    </div>
+                    <div class="logo">
+                        <img src="{{url_for('static', filename='logo.svg')}}" alt="logo.sv">
+                    </div>
+
+                    <div class="nav-icons">
+                        <a href="#">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <!--div1: Nav bars & search bar included-->
+            <div class="div1">
+                <div class="container">
+                    <div class="links">
+                        <ul>
+                            <li><a href="#"><img src="{{url_for('static',filename='topbar_home.svg')}}" alt="Home"></a></li>
+                            <li><a href="#"><img src="{{url_for('static',filename='topbar_category.svg')}}" alt="Category"></a></li>
+                            <li><a href="#"><img src="{{url_for('static',filename='topbar_newest_product.svg')}}" alt="Newest Product"></a></li>
+                            <li><a href="#"><img src="{{url_for('static',filename='topbar_promo.svg')}}" alt="Promo"></a></li>
+                            <li><a href="#"><img src="{{url_for('static',filename='topbar_shop.svg')}}" alt="Shop"></a></li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search here..">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+
+                    <div class="empty"></div>
+                </div>
+            </div>
+
+            <!-- div 2: product list -->
+            <div class="div2">
+                <div class="container">
+                    <div class="heading">
+                        <img src="{{url_for('static', filename='menu_product_list.svg')}}" alt="productlist.svg">
+                    </div>
+                    <div class="product-showcase">
+
+                        {%for product in data_product%}
+                        <div class="product-box1">
+                            <div class="top">
+                                <br><br>
+                            </div>
+                            <div class="product-img">
+                                <img src="data:image/jpeg;base64,{{ product.gambar }}" alt="sensorybox.png">
+                            </div>
+                            <div class="product-hints">
+                                <div class="row1">
+                                    <label for="name">{{product.nama_barang}}</label>
+                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                                <div class="row2">
+                                    <label for="price">{{product.harga}}</label>
+                                </div>
+                            </div>
+                        </div>
+                        {%endfor%}
+
+                    
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- div3 : Shop by Price -->
+            <div class="div3">
+                <div class="container">
+                    <div class="heading">
+                        <img src="{{url_for('static', filename='menu_shop_by_price.svg')}}" alt="byprice.svg">
+                    </div>
+                    <div class="promo-showcase">
+                        
+                        {%for product in data_product%}
+                        <div class="promo-box">
+                            <div class="image">
+                                <img src="data:image/jpeg;base64,{{ product.gambar }}" alt="promo1.png">
+                            </div>
+                            <div class="details">
+                                <div class="top">
+                                    <h4>{{product.nama_barang}}</h4>
+                                </div>
+                                <div class="bottom">
+                                    <div class="price-tag">
+                                        <ins>
+                                            <span class="amount">{{product.harga}}</span>
+                                        </ins>
+                                    </div>
+                                    <div class="icons">
+
+                                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {%endfor%}
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- div4 : Shop by age -->
+
+            <div class="div4">
+                <div class="container">
+                    <div class="heading">
+                        <img src="/IMG SRC/SVG/menu_shop_by_age.svg" alt="byage.svg">
+                    </div>
+                    <div class="age-boxes">
+                        <div class="age-35">
+                            <div class="age">Age 3 - 5</div>
+                            <div class="details">
+                                <div class="description">Toys and Activities for curious preschoolers</div>
+                                <div class="pic"><img src="/IMG SRC/DP-Source/images/newest product/sensory box.png" alt="3to5.png"></div>
+                            </div>
+                        </div>
+                        <div class="age-610">
+                            <div class="age">Age 6 - 10</div>
+                            <div class="details">
+                                <div class="description">Activities and gifts for the early elementary school</div>
+                                <div class="pic"><img src="/IMG SRC/DP-Source/images/newest product/mengenal pekerjaan (2).png" alt="6to10.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- div5: promos -->
+            <div class="div5">
+                <div class="container">
+                    <div class="heading">
+                        <img src="{{url_for('static', filename='menu_promo.svg')}}" alt="promos.svg">
+                    </div>
+                    <div class="promo-showcase">
+                        {%for product in data_promos%}
+                        <div class="promo-box">
+                            <div class="image">
+                                <img src="data:image/jpeg;base64,{{ product.gambar }}" alt="promo1.png">
+
+                            </div>
+                            <div class="details">
+                                <div class="top">
+                                    <h4>Promo Name</h4>
+                                </div>
+                                <div class="bottom">
+                                    <div class="price-tag">
+                                        <del>
+                                            <span class="amount">Original Price</span>
+                                        </del>
+
+                                        <ins>
+                                            <span class="amount">Promo Price</span>
+                                        </ins>
+                                    </div>
+                                    <div class="icons">
+                                        <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {%endfor%}
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additionals tba -->
+            <!-- footer -->
+            <footer>
+                <div class="container">
+                    <div class="foot-links">
+                        <table class="foot-table">
+                            <tr>
+                                <td><a href="#">Shop</a></td>
+                                <td><a href="#">About Us</a></td>
+                                <td><a href="#">Help</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">By Age</a></td>
+                                <td><a href="#">Policies</a></td>
+                                <td><a href="#">Get Started</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">By Difficulty</a></td>
+                                <td>
+                                    <a href="#"></a>
+                                </td>
+                                <td><a href="#">Privacy Settings</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">By Price</a></td>
+                                <td>
+                                    <a href="#"></a>
+                                </td>
+                                <td><a href="#">Help Centre</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="social-media">
+                        <div class="logo">
+                            <img src="/IMG SRC/SVG/logo.svg" alt="logo.sv">
+                        </div>
+                        <div class="social">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- footnote -->
+            <div class="footnote">
+                <div class="container">
+                    <div class="that">
+                        <a href="#"><i class="fa-solid fa-globe"></i></a>
+                        <p>Indonesia</p>
+                        <p>English (US)</p>
+                        <p>Rp (IDR)</p>
+                    </div>
+                    <div class="empty"></div>
+                </div>
+            </div>
+
+
+    </main>
+    <script src="https://kit.fontawesome.com/2bb3d33425.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

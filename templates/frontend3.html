@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='cssfe3.css')}}" class="css"> <!--Thanks Stack Overflow! -Backend Dev.-->
+</head>
+
+<body>
+    <main>
+        <div class="big-wrapper">
+            <header>
+                <div class="containing">
+                    <div class="empty">
+                    </div>
+                    <div class="logo">
+                        <img src="{{url_for('static', filename='logo.svg')}}" alt="">
+                    </div>
+
+                    <div class="nav-icons">
+                        <a href="#">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <nav>
+                <div class="containing">
+                    <div class="menu-weplay">
+                        <ul>
+                            <li><a href="#"><img src="{{url_for('static',filename='topbar_home.svg')}}" alt="Home"></a></li>
+                            <li><a href="#"><img src="{{url_for('static',filename='topbar_category.svg')}}" alt="Category"></a></li>
+                            <li><a href="#"><img src="{{url_for('static',filename='topbar_newest_product.svg')}}" alt="Newest Product"></a></li>
+                            <li><a href="#"><img src="{{url_for('static',filename='topbar_promo.svg')}}" alt="Promo"></a></li>
+                            <li><a href="#"><img src="{{url_for('static',filename='topbar_shop.svg')}}" alt="Shop"></a></li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="search here.."> 
+                        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                </div>
+            </nav>
+            <!--  -->
+            <div class="product">
+                <div class="containing">
+                    <a href="#"><img src="{{url_for('static',filename='topbar_newest_product.svg')}}" alt=""></a>
+                    <div class="box">
+                        <div class="box-left">
+                            <div class="card">
+                                <h4> {{data.nama_barang}} </h4>
+                                <img src="data:image/jpeg;base64,{{ imgs.0 }}" alt="produk1" width="692.9" height="450">
+                            </div>
+                            <div class="otherproducts">
+                                <!--Backend Ref. https://www.geeksforgeeks.org/python-using-for-loop-in-flask/  -->
+                                {%for i in range(1,img_len)%}
+                                <img src="data:image/jpeg;base64,{{imgs[i]}}" alt="produk1" width="90" height="90">
+                                {%endfor%}
+
+                            </div>
+
+                            <div class="howtoplay">
+                                <h3>HOW TO PLAY</h3>
+                            </div>
+
+                            <div class="play">
+                                <label for="play">
+                                    <!--Masukkan video disini-->
+                                </label>
+                        </div>
+                    </div>
+                       
+                        
+                        <div class="box-right">
+                            <div class="information">
+                                <div class="price">
+                                    <h4>Price</h4>
+                                    <h1>{{data.harga}}</h1>
+                                </div>
+                                <div class="product-description">
+                                    <h4>Description</h4>
+                                    <p>
+                                        {{data.deskripsi}}
+                                    </p>
+                                </div>
+                                <div class="quantity">
+                                    <label for="quantity">QUANTITY</label>  
+                                    <div class="button-plus-minus">
+                                        <span class="minus">-</span>
+                                        <span class="num">1</span>
+                                        <span class="plus">+</span>
+                                    </div>
+                                </div>
+
+                                <div class="deliver-option">
+                                    <label for="deliver-option">DELIVER OPTION</label>
+                                    <div class="dropdown">
+                                        <div class="select">
+                                            <span class="selected">INSTANT</span>
+                                            <div class="caret"></div>
+                                        </div>
+                                        <ul class="menu">
+                                            <li class="active">INSTANT</li>
+                                            <li>SAME DAY</li>
+                                            <li>NEXT DAY</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="confirm" onclick="onConfirm()">
+                                    <p><a href="#" class="tbl-orange" >CONFIRM</a></p>
+                                </div>
+                            </div>
+
+                            <div class="reviewjudul">
+                                <h3>REVIEW</h3>
+                            </div>
+                            <div class="review">
+                                <div class="reviews">
+                                    <!--TODO: Backend for, tampilin dari flask database-->
+                                    <div class="reviewbox">
+                                        <div class="sarah">
+                                            <label for="review">
+                                                <p>Sarah</p>
+                                                <!--img src ...-->
+                                                <p>This is out of this world</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </div>
+                        
+                       
+                       
+                        </div>
+                    </div>
+
+                    <footer>
+                        <div class="container">
+                            <div class="foot-links">
+                                <table class="foot-table">
+                                    <tr>
+                                        <td><a href="#">Shop</a></td>
+                                        <td><a href="#">About Us</a></td>
+                                        <td><a href="#">Help</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">By Age</a></td>
+                                        <td><a href="#">Policies</a></td>
+                                        <td><a href="#">Get Started</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">By Difficulty</a></td>
+                                        <td>
+                                            <a href="#"></a>
+                                        </td>
+                                        <td><a href="#">Privacy Settings</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">By Price</a></td>
+                                        <td>
+                                            <a href="#"></a>
+                                        </td>
+                                        <td><a href="#">Help Centre</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="social-media">
+                                <div class="logo">
+                                    <img src="{{url_for('static',filename='logo.svg')}}" alt="logo.sv">
+                                </div>
+                                <div class="social">
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                    <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+        
+                    <!-- footnote -->
+                    <div class="footnote">
+                        <div class="container">
+                            <div class="that">
+                                <a href="#"><i class="fa-solid fa-globe"></i></a>
+                                <p>Indonesia</p>
+                                <p>English (US)</p>
+                                <p>Rp (IDR)</p>
+                            </div>
+                            <div class="empty"></div>
+                        </div>
+                    </div>   
+                
+                </div>
+            </div>
+        </main>
+    <script src="https://kit.fontawesome.com/2bb3d33425.js" crossorigin="anonymous"></script>
+    <script>
+        const tambah = document.querySelector(".plus"),
+        kurang = document.querySelector(".minus"),
+        angka = document.querySelector(".num");
+
+        let a = 1;
+
+        tambah.addEventListener("click", ()=>{
+            a++;
+            a = (a < 10) ? a : a;
+            angka.innerText = a;
+        });
+        kurang.addEventListener("click", ()=>{
+            if(a > 1){
+                a--;
+                a = (a < 10)? a : a;
+                angka.innerText = a;
+            }
+        });
+
+        const dropdowns = document.querySelectorAll('.dropdown');
+        var deliveryType="INSTANT" //kludge by backend. 
+
+        dropdowns.forEach(dropdown=>{
+            const select = dropdown.querySelector('.select');
+            const caret = dropdown.querySelector('.caret');
+            const menu = dropdown.querySelector('.menu');
+            const options = dropdown.querySelectorAll('.menu li');
+            const selected = dropdown.querySelector('.selected');
+        
+        select.addEventListener('click', ()=>{
+            select.classList.toggle('select-clicked');
+            caret.classList.toggle('caret-rotate');
+            menu.classList.toggle('menu-open');
+        });
+
+        options.forEach(option =>{
+            option.addEventListener('click', () =>{
+                selected.innerText = option.innerText;
+                select.classList.remove('select-clicked');
+                caret.classList.remove('caret-rotate')
+                menu.classList.remove('menu-open');
+                deliveryType = selected.innerText
+                
+                options.forEach(option =>{
+                    option.classList.remove('active');
+                
+            });
+            option.classList.remove('active');    
+            })
+        });
+        });
+        
+
+        //Connect to Backend onclick
+        function onConfirm() {
+            //return confirmText & a to backend
+            
+            const returnText = "addtocart/" + '{{data.kode_barang}}' + '/' + deliveryType + '/' + a
+            window.location.href = returnText
+            
+
+        }
+    </script>
+</body>
+
+</html>
