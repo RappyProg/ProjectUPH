@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma Landing Page</title>
+    <link rel="stylesheet" href="/CSS/LandingPageFigma.css" class="css">
+    <script src="/JS/LandingPageFigma.js"></script>
+
+</head>
+
+<body>
+    <main>
+        <!--big wrapper for the whole thing-->
+        <div class="big-wrapper">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="nav-icons">
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </a>
+                </div>
+                <div class="more-links">
+                    <div class="links">
+                        <a href="#">Home</a>
+                        <a href="#categories" onclick="closeNav()">Category</a>
+                        <a href="#newestproduct" onclick="closeNav()">Newest Product</a>
+                        <a href="#promos" onclick="closeNav()">Promo</a>
+                        <a href="/HTML/ProductPageFigma.html" onclick="closeNav()">Shop</a>
+                    </div>
+                    <div class="foot-links">
+
+                        <table class="links">
+                            <tr>
+                                <td><a href="/HTML/ProductPageFigma.html" onclick="closeNav()">Shop</a></td>
+                                <td><a href="#aboutus" onclick="closeNav()">About Us</a></td>
+                                <td><a href="#">Help</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="/HTML/ProductPageFigma.html#byage" onclick="closeNav()">By Age</a></td>
+                                <td><a href="#">Policies</a></td>
+                                <td><a href="#">Get Started</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">By Difficulty</a></td>
+                                <td>
+                                    <a href="#"></a>
+                                </td>
+                                <td><a href="#">Privacy Settings</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="/HTML/ProductPageFigma.html#byprice" onclick="closeNav()">By Price</a></td>
+                                <td>
+                                    <a href="#"></a>
+                                </td>
+                                <td><a href="#">Help Centre</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+            <!--header section-->
+
+            <header>
+                <div class="container">
+
+
+                    <!-- Use any element to open the sidenav -->
+                    <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+                    <div class="empty"></div>
+                    <div class="logo">
+                        <img src="/IMG SRC/SVG/logo.svg" alt="logo.sv">
+                    </div>
+
+                    <div class="nav-icons">
+                        <a href="#">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <!--div1: Nav bars & Products-->
+            <div class="div1">
+                <div class="container">
+                    <div class="div1-mini">
+
+                        <div class="links">
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="/IMG SRC/SVG/topbar_home.svg" alt="home.svg"></a>
+                                </li>
+                                <li>
+                                    <a href="#categories"><img src="/IMG SRC/SVG/topbar_category.svg" alt="category.svg"></a>
+                                </li>
+                                <li>
+                                    <a href="#newestproduct"><img src="/IMG SRC/SVG/topbar_newest_product.svg" alt="newestproduct.svg"></a>
+                                </li>
+                                <li>
+                                    <a href="#promos"><img src="/IMG SRC/SVG/topbar_promo.svg" alt="promo.svg"></a>
+                                </li>
+                                <li>
+                                    <a href="/HTML/ProductPageFigma.html"><img src="/IMG SRC/SVG/topbar_shop.svg" alt="shop.svg"></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="div1-big" id="newestproduct">
+                        <div class="heading">
+                            <img src="/IMG SRC/SVG/menu_newest_product.svg" alt="newestproduct.svg">
+                        </div>
+                        <div class="product-showcase">
+                            <div class="product-box1">
+                                <div class="top">
+                                    <br><br>
+                                </div>
+                                <div class="product-img">
+                                    <img src="/IMG SRC/DP-Source/images/newest product/sensory box.png" alt="sensorybox.png">
+                                </div>
+                                <div class="product-hints">
+                                    <div class="row1">
+                                        <label for="name">Name</label>
+                                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                    <div class="row2">
+                                        <label for="price">Price</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box2">
+                                <div class="top">
+                                    <br><br>
+                                </div>
+                                <div class="product-img">
+                                    <img src="/IMG SRC/DP-Source/images/newest product/mengenal pekerjaan (2).png" alt="pekerjaan.png">
+                                </div>
+                                <div class="product-hints">
+                                    <div class="row1">
+                                        <label for="name">Name</label>
+                                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                    <div class="row2">
+                                        <label for="price">Price</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box3">
+                                <div class="top">
+                                    <br><br>
+                                </div>
+                                <div class="product-img">
+                                    <img src="/IMG SRC/DP-Source/images/newest product/vacation on board.png" alt="vacation.png">
+                                </div>
+                                <div class="product-hints">
+                                    <div class="row1">
+                                        <label for="name">Name</label>
+                                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                    <div class="row2">
+                                        <label for="price">Price</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#" class="see-more">See More!!</a>
+                        </div>
+
+                    </div>
+
+                    <div class="search">
+                        <div class="search-bar">
+                            <input type="text" placeholder="Search here..">
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                        <div class="searchby">
+                            <a href="#">Shop by Price</a>
+                            <a href="#">Shop by Difficulty</a>
+                            <a href="#">Shop by Age</a>
+                            <a href="#">Popular Products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+
+            <!--div2: About Us -->
+            <div class="div2" id="aboutus">
+                <div class="container">
+                    <div class="images">
+                        <div class="row1">
+                            <img src="/IMG SRC/DP-Source/images/about us/About Us 1.png" alt="aboutus1.png">
+                            <img src="/IMG SRC/DP-Source/images/about us/About Us 2.png" alt="aboutus2.png">
+                        </div>
+                        <div class="row2">
+                            <img src="/IMG SRC/DP-Source/images/about us/Foto ibu anak.png" alt="ibuanak.png">
+                        </div>
+                    </div>
+                    <div class="about-us">
+                        <div class="box">
+                            <div class="top">
+                                <img src="/IMG SRC/SVG/menu_about_us.svg" alt="aboutus.svg">
+                            </div>
+                            <div class="bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque libero eaque quasi provident ex quidem quod suscipit soluta laudantium. Deleniti, voluptatum. Mollitia placeat illo nam pariatur laboriosam impedit asperiores
+                                rerum.
+                            </div>
+
+                        </div>
+                        <div class="getstarted">
+                            <a href="#">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- div3: promos -->
+            <div class="div3" id="promos">
+                <div class="container">
+                    <div class="heading">
+                        <img src="/IMG SRC/SVG/menu_promos.svg" alt="promos.svg">
+                    </div>
+                    <div class="promo-showcase">
+                        <div class="promo-box">
+                            <div class="image">
+                                <img src="/IMG SRC/DP-Source/images/promo/promo 1.png" alt="promo1.png">
+
+                            </div>
+                            <div class="details">
+                                <div class="top">
+                                    <h4>Promo Name</h4>
+                                </div>
+                                <div class="bottom">
+                                    <div class="price-tag">
+                                        <del>
+                                        <span class="amount">Original Price</span>
+                                    </del>
+
+                                        <ins>
+                                        <span class="amount">Promo Price</span>
+                                    </ins>
+                                    </div>
+                                    <div class="icons">
+                                        <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="promo-box">
+                            <div class="image">
+                                <img src="/IMG SRC/DP-Source/images/promo/promo 2.png" alt="promo1.png">
+                            </div>
+                            <div class="details">
+                                <div class="top">
+                                    <h4>Promo Name</h4>
+                                </div>
+                                <div class="bottom">
+                                    <div class="price-tag">
+                                        <del>
+                                        <span class="amount">Original Price</span>
+                                    </del>
+
+                                        <ins>
+                                        <span class="amount">Promo Price</span>
+                                    </ins>
+                                    </div>
+                                    <div class="icons">
+                                        <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="promo-box">
+                            <div class="image">
+                                <img src="/IMG SRC/DP-Source/images/promo/promo 1.png" alt="promo1.png">
+                            </div>
+                            <div class="details">
+                                <div class="top">
+                                    <h4>Promo Name</h4>
+                                </div>
+                                <div class="bottom">
+                                    <div class="price-tag">
+                                        <del>
+                                        <span class="amount">Original Price</span>
+                                    </del>
+
+                                        <ins>
+                                        <span class="amount">Promo Price</span>
+                                    </ins>
+                                    </div>
+                                    <div class="icons">
+                                        <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="promo-box">
+                            <div class="image">
+                                <img src="/IMG SRC/DP-Source/images/promo/promo 2.png" alt="promo1.png">
+                            </div>
+                            <div class="details">
+                                <div class="top">
+                                    <h4>Promo Name</h4>
+                                </div>
+                                <div class="bottom">
+                                    <div class="price-tag">
+                                        <del>
+                                        <span class="amount">Original Price</span>
+                                    </del>
+
+                                        <ins>
+                                        <span class="amount">Promo Price</span>
+                                    </ins>
+                                    </div>
+                                    <div class="icons">
+                                        <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- div4: Shop By categories (description) -->
+            <div class="div4" id="categories">
+                <div class="container">
+                    <div class="heading">
+                        <img src="/IMG SRC/SVG/menu_shop_by_category.svg" alt="shopbycategory.svg">
+                    </div>
+                    <div class="categories">
+                        <div class="category-box">
+                            <div class="category">
+                                <a href="#">
+                                    <h3>Numbers</h3>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <p>Help your kids with numbers counting toys specifically designed for young minds to learn the fundamentals of numbers & mathematics.</p>
+                            </div>
+                        </div>
+                        <div class="category-box">
+                            <div class="category">
+                                <a href="#">
+                                    <h3>Occupation</h3>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <p>Check out our occupation toys selection for the very best in unique or custom, handmade pieces from our shops.</p>
+                            </div>
+                        </div>
+                        <div class="category-box">
+                            <div class="category">
+                                <a href="#">
+                                    <h3>Language</h3>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <p>The process of language development starts at home, and it can be fun, too.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- div5: User Review -->
+            <div class="div5">
+                <div class="container">
+                    <div class="heading">
+                        <img src="/IMG SRC/SVG/menu_user_review.svg" alt="review.svg">
+                    </div>
+                    <div class="reviews">
+                        <div class="review-box">
+                            <div class="inner-container">
+                                <div class="image">
+                                    <img src="/IMG SRC/DP-Source/images/review/image 1.jpg" alt="image1.jpg">
+                                </div>
+                                <div class="review">
+                                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                                    <div class="text">
+                                        <p>This store's selection</p>
+                                        <p>is out of this world.</p>
+
+                                    </div>
+                                    <div class="name">
+                                        <p>- Sarah</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <div class="inner-container">
+                                <div class="image">
+                                    <img src="/IMG SRC/DP-Source/images/review/image 2.jpg" alt="image2.jpg">
+                                </div>
+                                <div class="review">
+                                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                                    <div class="text">
+                                        <p>Great toy!
+                                        </p>
+
+                                    </div>
+                                    <div class="name">
+                                        <p>- Jason</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <div class="inner-container">
+                                <div class="image">
+                                    <img src="/IMG SRC/DP-Source/images/review/image 3.jpg" alt="image3.jpg">
+                                </div>
+                                <div class="review">
+                                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                                    <div class="text">
+                                        <p>
+                                            Greatest Toy Store!!
+                                        </p>
+                                    </div>
+                                    <div class="name">
+                                        <p>- Frank B</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <div class="inner-container">
+                                <div class="image">
+                                    <img src="/IMG SRC/DP-Source/images/review/image 1.jpg" alt="image1.jpg">
+                                </div>
+                                <div class="review">
+                                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                                    <div class="text">
+                                        <p>This store's selection</p>
+                                        <p>is out of this world.</p>
+
+
+                                    </div>
+                                    <div class="name">
+                                        <p>- Sarah</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <div class="inner-container">
+                                <div class="image">
+                                    <img src="/IMG SRC/DP-Source/images/review/image 2.jpg" alt="image2.jpg">
+                                </div>
+                                <div class="review">
+                                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                                    <div class="text">
+                                        <p>Great toy!
+                                        </p>
+
+                                    </div>
+                                    <div class="name">
+                                        <p>- Jason</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <div class="inner-container">
+                                <div class="image">
+                                    <img src="/IMG SRC/DP-Source/images/review/image 3.jpg" alt="image3.jpg">
+                                </div>
+                                <div class="review">
+                                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                                    <div class="text">
+                                        <p>
+                                            Greatest Toy Store!!
+                                        </p>
+                                    </div>
+                                    <div class="name">
+                                        <p>- Frank B</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- div6: FAQ -->
+            <div class="div6">
+                <div class="container">
+                    <div class="heading">
+                        <img src="/IMG SRC/SVG/menu_faq.svg" alt="faq.svg">
+                    </div>
+                    <div class="faq">
+                        <div class="faq-box">
+                            <div class="question">
+                                <p>"How much will it cost to ship my order?"</p>
+                            </div>
+                            <div class="answer">
+                                <p>We use a combination of FedEx, UPS, and USPS. Rates will vary across different carriers depending on size and weight of your total order.</p>
+                            </div>
+                        </div>
+                        <div class="faq-box">
+                            <div class="question">
+                                <p>"Do you offer gift wrap?"</p>
+                            </div>
+                            <div class="answer">
+                                <p>If you either purchase in-store, or choose curbside pick-up, we do offer free gift wrap!</p>
+                            </div>
+                        </div>
+                        <div class="faq-box">
+                            <div class="question">
+                                <p>"How do I cancel or modify my order?"</p>
+                            </div>
+                            <div class="answer">
+                                <p>If you need to cancel or modify your order you can email us at orders@weplayonline.com or give us a call at 785-331-3218. Please have your Order or Invoice number handy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <footer>
+                <div class="container">
+                    <div class="foot-links">
+                        <table class="foot-table">
+                            <tr>
+                                <td><a href="/HTML/ProductPageFigma.html">Shop</a></td>
+                                <td><a href="#aboutus">About Us</a></td>
+                                <td><a href="#">Help</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="/HTML/ProductPageFigma.html#byage">By Age</a></td>
+                                <td><a href="#">Policies</a></td>
+                                <td><a href="#">Get Started</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">By Difficulty</a></td>
+                                <td>
+                                    <a href="#"></a>
+                                </td>
+                                <td><a href="#">Privacy Settings</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="/HTML/ProductPageFigma.html#byprice">By Price</a></td>
+                                <td>
+                                    <a href="#"></a>
+                                </td>
+                                <td><a href="#">Help Centre</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="social-media">
+                        <div class="logo">
+                            <img src="/IMG SRC/SVG/logo.svg" alt="logo.sv">
+                        </div>
+                        <div class="social">
+                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.pinterest.com"><i class="fa-brands fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- footnote -->
+            <div class="footnote">
+                <div class="container">
+                    <div class="that">
+                        <a href="#"><i class="fa-solid fa-globe"></i></a>
+                        <p>Indonesia</p>
+                        <p>English (US)</p>
+                        <p>Rp (IDR)</p>
+                    </div>
+                    <div class="empty"></div>
+                </div>
+            </div>
+
+    </main>
+    <script src="https://kit.fontawesome.com/2bb3d33425.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
