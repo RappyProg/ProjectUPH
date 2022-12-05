@@ -32,4 +32,13 @@ Figma Landing Page Added
 Figma Wireframe uploaded
 Included --> Landing Page, Product Desc. page
 25/10/2022
+
+.
+.
+.
+.
+
+**Version 1.1**
+Landing Page     : Finalized
+Product List Page: Finalized
 ```
