@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Condensed&family=Silkscreen&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --headerBG: rgb(255, 230, 0);
+  --div1miniBG: rgb(108, 191, 202);
+  --div1bigBG: rgba(240, 203, 91, 36%);
+  --div2BG: rgba(155, 189, 214, 70%);
+  --div3BG: rgba(250, 203, 203, 50%);
+  --div4BG: rgba(155, 189, 214, 70%);
+  --div5BG: rgb(153, 220, 164);
+  --div6BG: rgb(250, 206, 206);
+  --div7bigBG: rgb(255, 217, 102);
+  --div7miniBG: rgb(255, 168, 0);
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.containing {
+    position: relative;
+    min-width: 100vw;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    z-index: 10;
+  }
+
+header .containing {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--headerBG);
+    align-items: center;
+    height: 5rem;
+}
+
+header .empty {
+    margin-right: 8rem;
+}
+
+.logo img {
+    height: 55px;
+}
+
+.nav-icons,
+.nav-icons a {
+  text-decoration: none;
+  margin-left: 3rem;
+  font-size: 25px;
+  color: white;
+  display: flex;
+  transition: 0.5s;
+}
+
+.nav-icons a:hover {
+  transform: scale(1.1);
+}
+
+.bonding-reminder {
+  background-color: #99DB94;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin: auto;
+  position: relative;
+}
+
+.bonding-reminder h3{
+  color: #FF8C68;
+  text-shadow: 0 1px 1px white, 0 -1px 1px white, 1px 0 1px white, -1px 0 1px white;
+  font-size: xx-large;
+}
+
+.your-schedule{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.calendar{
+    background-color: #F9FBBB;
+}
+
+.calendar h3{
+  text-shadow: 0 1px 1px #000, 0 -1px 1px #000, 1px 0 1px #000, -1px 0 1px #000;
+  font-size: xx-large;
+  margin-top: 30px;
+  color: white;
+  margin-left: 15%;
+}
+
+.checklist-after-play{
+    background-color: #BCE7FF;
+}
+
+.checklist-after-play h3{
+    color: #000;
+    font-weight: 999;
+    margin-left: 500px;
+    padding-top: 20px;
+}
+
+.kalender{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-color: #FF8C68;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 60px;
+    padding-left: 60px;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.checklist{
+    margin-top: 45px;
+}
+
+.checkbox{
+    margin-top: 10px;
+}
+
+.checkbox label{
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    color: #000;
+    padding: 0.5rem 1rem;
+    padding-right: 50%;
+    margin-left: 15px;
+    font-size: 999;
+}
+
+.centang{
+    margin-bottom: 10px;
+    padding-left: 600px;
+}
+
+.centang input[type="checkbox"]{
+    border-radius: 50%;
+    padding: 0.5rem 0.9rem;
+    background-color: white;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--div7bigBG);
+    padding: 2rem 8rem;
+    margin-top: -1px;
+    z-index: 5;
+  }
+  
+.foot-table td {
+    padding: 10px 10px;
+    transition: 0.5s;
+}
+  
+.foot-table td:hover {
+    transform: scale(1.2);
+}
+  
+.foot-table a {
+    text-decoration: none;
+    color: #93258E;
+    font-weight: bolder;
+    text-shadow: -1px -1px 2px white, 0 -1px 2px white, 1px -1px 2px white, 1px 0 2px white, 1px 1px 2px white, 0 1px 2px white, -1px 1px 2px white, -1px 0 2px white;
+    font-size: 22px;
+    transition: 0.5s;
+}
+  
+.social-media {
+    padding: 2rem 2rem;
+    margin: 0 10rem;
+}
+  
+.social-media .logo {
+    margin-left: 1rem;
+}
+  
+.social-media img {
+    height: 75px;
+}
+  
+.social-media .social {
+    font-size: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+  
+.social a {
+    color: white;
+    transition: 0.5s;
+}
+  
+.social a:hover {
+    transform: scale(1.2);
+}
+  
+.footnote .container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--div7miniBG);
+    padding: 2rem 8rem;
+    margin-top: -1px;
+    z-index: 5;
+}
+  
+.footnote .that {
+    display: flex;
+}
+  
+.that a,
+    .that p {
+        text-decoration: none;
+        padding: 2rem 2rem;
+        color: black;
+    }
+    
+    .that p {
+        color: #FF8C68;
+        font-weight: bolder;
+        text-shadow: -1px -1px 2px white, 0 -1px 2px white, 1px -1px 2px white, 1px 0 2px white, 1px 1px 2px white, 0 1px 2px white, -1px 1px 2px white, -1px 0 2px white;
+        font-size: 20px;
+    }
